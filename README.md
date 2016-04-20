@@ -1,4 +1,4 @@
-#掘金每技术分享-Swift/可视化编程
+#掘金每周技术分享-Swift/可视化编程
 
 ![](http://upload-images.jianshu.io/upload_images/1298596-515b84f7ecf33e20.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
