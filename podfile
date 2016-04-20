@@ -1,0 +1,3 @@
+pod 'YYKit'
+pod 'AVOSCloud'  
+pod 'SDWebImage'

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="UCL-cv-4SF">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--掘金-->
+        <scene sceneID="CEE-9Q-Oxv">
+            <objects>
+                <tableViewController id="TBm-yT-qnA" customClass="XTHomeTableViewController" customModule="SwiftGoldHome" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="178" sectionHeaderHeight="1" sectionFooterHeight="20" id="4kb-vt-rfA">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <connections>
+                            <outlet property="dataSource" destination="TBm-yT-qnA" id="hdc-4x-csz"/>
+                            <outlet property="delegate" destination="TBm-yT-qnA" id="yZr-2a-zD4"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="掘金" id="2wW-4J-xm8"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <segue destination="Fsv-6p-8sY" kind="show" identifier="showWeb" id="wzE-xk-yYy"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WP6-ks-8xg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="994.5" y="319.5"/>
+        </scene>
+        <!--Entry Detial View Controller-->
+        <scene sceneID="h2H-ic-lnd">
+            <objects>
+                <viewController id="Fsv-6p-8sY" customClass="XTEntryDetialViewController" customModule="SwiftGoldHome" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="1Kf-Dr-qwW"/>
+                        <viewControllerLayoutGuide type="bottom" id="YK4-PL-NYt"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="TkF-HJ-UAU">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3j4-3j-ocV">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="deviceRGB"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="3j4-3j-ocV" firstAttribute="top" secondItem="1Kf-Dr-qwW" secondAttribute="bottom" id="6c2-bP-qbk"/>
+                            <constraint firstItem="3j4-3j-ocV" firstAttribute="leading" secondItem="TkF-HJ-UAU" secondAttribute="leading" id="j6U-dg-ndZ"/>
+                            <constraint firstItem="YK4-PL-NYt" firstAttribute="top" secondItem="3j4-3j-ocV" secondAttribute="bottom" id="qbw-qp-4Xp"/>
+                            <constraint firstAttribute="trailing" secondItem="3j4-3j-ocV" secondAttribute="trailing" id="xSe-pE-MIR"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="webView" destination="3j4-3j-ocV" id="l5V-y1-JHl"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BQk-M3-w3v" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1575.5" y="319.5"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="WkN-X0-LDe">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="UCL-cv-4SF" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Bp7-1U-iWb">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="TBm-yT-qnA" kind="relationship" relationship="rootViewController" id="CgH-Gf-pic"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YYT-sm-W7d" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="404.5" y="319.5"/>
+        </scene>
+    </scenes>
+</document>
