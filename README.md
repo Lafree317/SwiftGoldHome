@@ -343,9 +343,19 @@ class XTHomeTableViewController: UITableViewController {
 
 >cell,这里会用几个gif图来详细演示一下cell通过可视化自己计算高度的操作
 
->拖入控件添加约束
+>拖入控件
 
-![](http://upload-images.jianshu.io/upload_images/1298596-b2a9124832a792d1.gif?imageMogr2/auto-orient/strip)
+
+![](http://upload-images.jianshu.io/upload_images/1298596-8b2109b0a9c22a62.gif?imageMogr2/auto-orient/strip)
+
+>普通约束
+
+![普通约束.gif](http://upload-images.jianshu.io/upload_images/1298596-7207a58c807d3d36.gif?imageMogr2/auto-orient/strip)
+
+>计算高度所需要约束
+
+![计算高度所需要的约束.gif](http://upload-images.jianshu.io/upload_images/1298596-f6d3caf66a29ceb3.gif?imageMogr2/auto-orient/strip)
+
 
 >然后是控件连线
 
